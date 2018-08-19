@@ -6,13 +6,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding:2% 1%;
-}
-
-.timecontent h3 {
-    margin-bottom: 1rem;
-    color: #000;
-    font-family: 'Abel', sans-serif;
+    padding: 0 1%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -33,6 +27,7 @@
     position: relative;
     background-color: inherit;
     width: 50%;
+    margin-top: -50px;
 }
 
 /* The circles on the timeline */
@@ -43,7 +38,7 @@
     height: 25px;
     right: -13px;
     background-color: white;
-    border: 4px solid #70b9ff;
+    border: 4px solid #99c8ff;
     top: 19px;
     border-radius: 50%;
     z-index: 1;
@@ -94,10 +89,41 @@
 
 /* The actual content */
 .timecontent {
-    padding: 10px 30px;
+    padding: 10px 30px 5px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.timecontent h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Abel', sans-serif;
+}
+
+.timecontent h4 {
+    margin-bottom: 0;
+}
+
+/* Customize Session */
+.session-break {
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.session-title {
+    position: relative;
+    margin-top: 0;
+    z-index: 2;
+    font-size: 2rem;
+    color: #2d2d2d;
+    background-color: #ebebeb;
+    padding: 1rem 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
 }
 
 @media all and (max-width: 850px) {
@@ -109,6 +135,7 @@
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        margin-top: 0;
     }
 
     .containertime:before {
@@ -125,4 +152,9 @@
     .timeright {
         left: 0;
     }
+
+    .session-title {
+        background-color: transparent;
+    }
 }
+
