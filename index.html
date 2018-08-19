@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="css/montserrat.css" rel="stylesheet" type="text/css">
     <link href="css/lato.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css">
 </head>
 <body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -38,14 +38,11 @@
     </div>
 </nav>
 <div class="jumbotron text-center">
-    <h1>A-Mobile 2018
-        <h1>
-            <h3>The 2018 International Workshop on Advances in Mobile App Analysis</h3>
-            <h3>4 September 2018, Montpellier, France</h3>
-            <i>held in conjunction with the 33rd IEEE/ACM International Conference on Automated Software Engineering
-                (ASE 2018)</i>
-        </h1>
-    </h1>
+    <h1>A-Mobile 2018</h1>
+    <h3>The 2018 International Workshop on Advances in Mobile App Analysis</h3>
+    <h3>4 September 2018, Montpellier, France</h3>
+    <i>held in conjunction with the 33rd IEEE/ACM International Conference on Automated Software Engineering
+        (ASE 2018)</i>
 </div>
 
 <div id="intro" class="container-fluid row">
@@ -198,9 +195,20 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
             <h2>Program</h2>
-            <p>
-                To be continued...
-            </p>
+            <div class="timeline">
+                <div class="containertime timeleft">
+                    <div class="timecontent">
+                        <h3>2017</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="containertime timeright">
+                    <div class="timecontent">
+                        <h3>2016</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-sm-2"></div>
     </div>
@@ -211,45 +219,20 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
             <h2>Contact</h2>
-            <p>
-                For further inquiries, please drop an email to <a href="mailto:a.mobile.organizer@gmail.com">a.mobile.organizer@gmail.com</a>
-                or tweet to us @A_Mobile_WP. We also welcome all suggestions and comments to this workshop.
-            </p>
+            <p>For further inquiries, please drop an email to <a href="mailto:a.mobile.organizer@gmail.com">a.mobile.organizer@gmail.com</a>
+                or tweet to us @A_Mobile_WP. We also welcome all suggestions and comments to this workshop.</p>
         </div>
         <div class="col-sm-2"></div>
     </div>
 </div>
 
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-    /*var myCenter = new google.maps.LatLng(37.385270,-5.991906);
-
-     function initialize() {
-     var mapProp = {
-     center:myCenter,
-     zoom:17,
-     scrollwheel:false,
-     draggable:false,
-     mapTypeId:google.maps.MapTypeId.ROADMAP
-     };
-
-     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-     var marker = new google.maps.Marker({
-     position:myCenter,
-     });
-
-     marker.setMap(map);
-     }
-
-     google.maps.event.addDomListener(window, 'load', initialize);*/
-</script>
-
 <footer class="container-fluid text-center bg-grey">
     International Workshop on Advances in Mobile AppAnalysis (A-Mobile)
 </footer>
 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
         // Add smooth scrolling to all links in navbar + footer link
@@ -287,3 +270,30 @@
 
 </body>
 </html>
+
+
+<!-- Add Google Maps -->
+<!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
+<!--<script>-->
+<!--/*var myCenter = new google.maps.LatLng(37.385270,-5.991906);-->
+
+<!--function initialize() {-->
+<!--var mapProp = {-->
+<!--center:myCenter,-->
+<!--zoom:17,-->
+<!--scrollwheel:false,-->
+<!--draggable:false,-->
+<!--mapTypeId:google.maps.MapTypeId.ROADMAP-->
+<!--};-->
+
+<!--var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);-->
+
+<!--var marker = new google.maps.Marker({-->
+<!--position:myCenter,-->
+<!--});-->
+
+<!--marker.setMap(map);-->
+<!--}-->
+
+<!--google.maps.event.addDomListener(window, 'load', initialize);*/-->
+<!--</script>-->
