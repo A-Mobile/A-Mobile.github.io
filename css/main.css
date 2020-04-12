@@ -154,6 +154,44 @@ h4 {
     color: #fff !important;
 }
 
+.dropbtn {
+  background-color: #0074D9;
+  color: white;
+  font-size: 12px;
+  border: none;
+  font-family: Montserrat, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0074D9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #0000FF !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #0000FF;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: #0000FF;
+}
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
